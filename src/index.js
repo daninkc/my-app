@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import $ from 'jquery';
+import styles from '/Users/Daniela/Desktop/React JS/Projects/my-app/src/bootstrap/css/bootstrap.css';
+import functioning from '/Users/Daniela/Desktop/React JS/Projects/my-app/src/bootstrap/js/bootstrap.js';
+
 
 ReactDOM.render(
   <React.StrictMode>
