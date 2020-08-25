@@ -1,31 +1,48 @@
+* {
+    color: #3C03C1;
+}
+
 img {
     width: 15vw;
     margin-right: 10vw;
 }
 
 a {
-    margin-right: 8vw;
     color: #565656;
     font-weight: bold;
     font-size: 14px;
 }
 
+
+.navbar-nav {
+    background-color: #f9f9f9;
+        margin-left: 4vw;
+    }
+
 .bg-light {
-    height: 80px;
     padding-top: 20px;
     padding-bottom: 21px;
     }
 
     .navbar {
-        padding-left: 50px !important;
+        padding-left: 10px !important;
         background: #f9f9f9;
         }
+
+        .navbar-nav > a {
+            margin-right: 2vw;
+            margin-left: 2vw;
+            }
 
 @media (max-width: 740px) {
 
     img {
         width: 25vw;
     }
+
+        .navbar {
+            padding-bottom: 10px;
+            }
 
 
 }

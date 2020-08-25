@@ -2,26 +2,34 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
+import {BrowserRouter, Switch, Route } from 'react-router-dom';
+import { homePage, contactInfo, finishedJobs, getBudget } from './routes/index';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div className="App">
-            <NavBar/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Esta es la app de Dani.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>  
+  <header>
+        <NavBar/>
+          </header>
+    
+          <Switch>
+          <Route exact path='/'>
+            <Home />   
+          </Route>
+          <Route exact path='/presupuesto'>
+            <getBudget /> 
+          </Route>
+          <Route exact path='/trabajos'>
+            <finishedJobs /> 
+          </Route>
+          <Route exact path='/contacto'>
+              <contactInfo />
+          </Route>
+        </Switch>
+        </BrowserRouter>
+
+      
   );
 }
 
