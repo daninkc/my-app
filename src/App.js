@@ -12,7 +12,6 @@ function App() {
   <header>
         <NavBar/>
           </header>
-    
           <Switch>
           <Route exact path='/'>
             <Home />   
@@ -28,8 +27,6 @@ function App() {
           </Route>
         </Switch>
         </BrowserRouter>
-
-      
   );
 }
 

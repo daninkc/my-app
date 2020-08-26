@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../assets/Logo.png';
 import styles from '../styles/NavBar.css';
 import CartIcon from '../components/CartIcon';
+import Counter from '../components/Counter';
 
 class Navbar extends React.Component {
     render() {
@@ -24,6 +25,9 @@ class Navbar extends React.Component {
   </div>
 
   <div>  <CartIcon/>
+</div>
+<div>
+<Counter/>
 </div>
 
 </nav>

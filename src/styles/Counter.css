@@ -1,0 +1,13 @@
+.counterButton {
+    color: darkslategray;
+    border: none;
+    background-color: transparent;
+}
+
+.counterButton:active {
+    border: none;
+}
+
+.counterButton:hover {
+    background-color: lightgoldenrodyellow;
+}
